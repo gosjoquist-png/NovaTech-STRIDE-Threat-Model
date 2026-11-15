@@ -1,0 +1,28 @@
+{
+  "version": "2.6.2",
+  "release_version": "1.0",
+  "released_at": "2026-11-15",
+  "summary": {
+    "title": "NovaTech Subscription Web Application",
+    "owner": "Grace Sjoquist",
+    "description": "The NovaTech web application allows users to create accounts and purchase paid subscriptions. The system consists of a web server that processes user requests, a SQL database that stores account and subscription information, and an external payment gateway that processes transactions and returns payment status information. The application includes internet-facing and internal trust boundaries. This threat model identifies potential security threats using the STRIDE methodology.",
+    "id": 0
+  },
+  "detail": {
+    "contributors": [],
+    "diagrams": [
+      {
+        "id": 0,
+        "title": "NovaTech Subscription Application DFD",
+        "diagramType": "STRIDE",
+        "placeholder": "New STRIDE diagram description",
+        "thumbnail": "./public/content/images/thumbnail.stride.jpg",
+        "version": "2.6.2",
+        "cells": []
+      }
+    ],
+    "diagramTop": 1,
+    "reviewer": "",
+    "threatTop": 0
+  }
+}
