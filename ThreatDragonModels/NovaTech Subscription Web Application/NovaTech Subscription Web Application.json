@@ -40,6 +40,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 1,
             "ports": {
               "groups": {
                 "top": {
@@ -123,7 +124,6 @@
               ]
             },
             "id": "de14a99b-ca06-4b0b-a69b-352139921033",
-            "zIndex": 1,
             "data": {
               "type": "tm.Actor",
               "name": "Human User",
@@ -157,6 +157,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 2,
             "ports": {
               "groups": {
                 "top": {
@@ -240,7 +241,6 @@
               ]
             },
             "id": "f64212d8-83b8-42aa-ba81-fc387c865c21",
-            "zIndex": 2,
             "data": {
               "type": "tm.Process",
               "name": "Web Server",
@@ -259,7 +259,7 @@
           {
             "position": {
               "x": 740,
-              "y": 90
+              "y": 40
             },
             "size": {
               "width": 120,
@@ -280,6 +280,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 3,
             "ports": {
               "groups": {
                 "top": {
@@ -363,7 +364,6 @@
               ]
             },
             "id": "8628a3df-4e04-448d-99a7-4be3813e2006",
-            "zIndex": 3,
             "data": {
               "type": "tm.Store",
               "name": "SQL Database",
@@ -401,6 +401,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 4,
             "ports": {
               "groups": {
                 "top": {
@@ -484,7 +485,6 @@
               ]
             },
             "id": "4efea959-76b0-4fda-a8eb-90617aaa8da4",
-            "zIndex": 4,
             "data": {
               "type": "tm.Actor",
               "name": "Payment Gateway",
@@ -590,12 +590,12 @@
             },
             "vertices": [
               {
-                "x": 500,
-                "y": 140
+                "x": 490,
+                "y": 110
               },
               {
-                "x": 580,
-                "y": 120
+                "x": 590,
+                "y": 70
               }
             ]
           },
@@ -637,13 +637,164 @@
             ],
             "id": "d8b49f4d-539f-4e43-987a-2b35218c6c4e",
             "source": {
-              "x": 800,
-              "y": 150
+              "cell": "8628a3df-4e04-448d-99a7-4be3813e2006",
+              "port": "de8fa958-2609-4a5e-b1bb-e24587d592f5"
             },
             "target": {
               "cell": "f64212d8-83b8-42aa-ba81-fc387c865c21",
               "port": "20e9fe6d-b924-459e-bd8c-7721d0a09e27"
             }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Payment Request\n",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Payment Request\n"
+            ],
+            "id": "2bd599e7-fe5c-4bfe-bf45-9bcace5646d9",
+            "source": {
+              "cell": "f64212d8-83b8-42aa-ba81-fc387c865c21",
+              "port": "20e9fe6d-b924-459e-bd8c-7721d0a09e27"
+            },
+            "target": {
+              "cell": "4efea959-76b0-4fda-a8eb-90617aaa8da4",
+              "port": "b96aff3d-9c32-47aa-b484-d8799713d32f"
+            },
+            "vertices": []
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Payment Status/Confirmation",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Payment Status/Confirmation"
+            ],
+            "id": "aa5baaef-1495-49d3-9138-dc64b19e8e5a",
+            "source": {
+              "cell": "4efea959-76b0-4fda-a8eb-90617aaa8da4",
+              "port": "4b1702de-cb0f-4862-8eeb-dc19068d918b"
+            },
+            "target": {
+              "cell": "f64212d8-83b8-42aa-ba81-fc387c865c21",
+              "port": "20e9fe6d-b924-459e-bd8c-7721d0a09e27"
+            },
+            "vertices": [
+              {
+                "x": 370,
+                "y": 270
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Update Subscription Status",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Update Subscription Status"
+            ],
+            "id": "f3c32369-8b5c-44a4-8153-14b910a2eb7f",
+            "source": {
+              "cell": "f64212d8-83b8-42aa-ba81-fc387c865c21",
+              "port": "1027ac5e-f93b-4b90-bdb8-2d87cc23b36b"
+            },
+            "target": {
+              "cell": "8628a3df-4e04-448d-99a7-4be3813e2006",
+              "port": "9b36772f-096d-4b85-8a1a-df70ad2ac033"
+            },
+            "vertices": [
+              {
+                "x": 480,
+                "y": 20
+              }
+            ]
           }
         ],
         "description": "Data flow diagram illustrating user registration, account management, subscription purchases, database interactions, and external payment processing, including internal and internet-facing trust boundaries."
