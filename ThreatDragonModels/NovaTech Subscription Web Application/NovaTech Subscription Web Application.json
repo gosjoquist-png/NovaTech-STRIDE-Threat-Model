@@ -25,7 +25,7 @@
               "y": 140
             },
             "size": {
-              "width": 112.5,
+              "width": 90,
               "height": 60
             },
             "attrs": {
@@ -139,11 +139,11 @@
           {
             "position": {
               "x": 400,
-              "y": 110
+              "y": 100
             },
             "size": {
               "width": 60,
-              "height": 60
+              "height": 70
             },
             "attrs": {
               "text": {
@@ -517,52 +517,6 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Login Creds",
-              "description": "User sends registration information or login credentials to the web server.",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": []
-            },
-            "labels": [
-              "Login Creds"
-            ],
-            "id": "cbf81caf-6d7d-4418-b96d-45f8c2471d67",
-            "source": {
-              "x": 253,
-              "y": 167
-            },
-            "target": {
-              "cell": "f64212d8-83b8-42aa-ba81-fc387c865c21",
-              "port": "91e664e1-c83d-4f9c-9861-0c39173c37db"
-            }
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
               "name": "Store User Account Information",
               "description": "The web server sends new user registration details and account information to the SQL database for storage.",
               "outOfScope": false,
@@ -793,6 +747,166 @@
               {
                 "x": 480,
                 "y": 20
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Registration/ Payment Confirmation",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Registration/ Payment Confirmation"
+            ],
+            "id": "b589ca23-dbce-4396-9200-ea2eac3d3eb6",
+            "source": {
+              "cell": "f64212d8-83b8-42aa-ba81-fc387c865c21",
+              "port": "1027ac5e-f93b-4b90-bdb8-2d87cc23b36b"
+            },
+            "target": {
+              "cell": "de14a99b-ca06-4b0b-a69b-352139921033",
+              "port": "b96aff3d-9c32-47aa-b484-d8799713d32f"
+            },
+            "vertices": [
+              {
+                "x": 300,
+                "y": 60
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Login Creds\n",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Login Creds\n"
+            ],
+            "id": "fe68efb6-10fe-4b81-ad84-3bc445badbd3",
+            "source": {
+              "cell": "de14a99b-ca06-4b0b-a69b-352139921033",
+              "port": "c6793e09-8ed7-40ea-8442-8b1f302b93e3"
+            },
+            "target": {
+              "cell": "f64212d8-83b8-42aa-ba81-fc387c865c21",
+              "port": "91e664e1-c83d-4f9c-9861-0c39173c37db"
+            },
+            "vertices": [
+              {
+                "x": 270,
+                "y": 170
+              },
+              {
+                "x": 310,
+                "y": 190
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Subscription Request",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Subscription Request"
+            ],
+            "id": "5573b857-fe98-4341-a475-075184e4b12a",
+            "source": {
+              "cell": "de14a99b-ca06-4b0b-a69b-352139921033",
+              "port": "2097a10a-2fe1-41ae-8681-7c806c7af856"
+            },
+            "target": {
+              "cell": "f64212d8-83b8-42aa-ba81-fc387c865c21",
+              "port": "91e664e1-c83d-4f9c-9861-0c39173c37db"
+            },
+            "vertices": [
+              {
+                "x": 330,
+                "y": 220
               }
             ]
           }
