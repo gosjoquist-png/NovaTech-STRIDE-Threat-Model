@@ -138,8 +138,8 @@
           },
           {
             "position": {
-              "x": 366,
-              "y": 140
+              "x": 400,
+              "y": 110
             },
             "size": {
               "width": 60,
@@ -258,8 +258,8 @@
           },
           {
             "position": {
-              "x": 550,
-              "y": 140
+              "x": 740,
+              "y": 90
             },
             "size": {
               "width": 120,
@@ -267,7 +267,7 @@
             },
             "attrs": {
               "text": {
-                "text": "SQL Darabase"
+                "text": "SQL Database"
               },
               "topLine": {
                 "strokeWidth": 1.5,
@@ -366,7 +366,7 @@
             "zIndex": 3,
             "data": {
               "type": "tm.Store",
-              "name": "SQL Darabase",
+              "name": "SQL Database",
               "description": "Stores user account information, authentication data, and subscription records.",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -382,8 +382,8 @@
           },
           {
             "position": {
-              "x": 300,
-              "y": 240
+              "x": 450,
+              "y": 300
             },
             "size": {
               "width": 112.5,
@@ -495,6 +495,154 @@
               "hasOpenThreats": false,
               "providesAuthentication": false,
               "threats": []
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Login Creds",
+              "description": "User sends registration information or login credentials to the web server.",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Login Creds"
+            ],
+            "id": "cbf81caf-6d7d-4418-b96d-45f8c2471d67",
+            "source": {
+              "x": 253,
+              "y": 167
+            },
+            "target": {
+              "cell": "f64212d8-83b8-42aa-ba81-fc387c865c21",
+              "port": "91e664e1-c83d-4f9c-9861-0c39173c37db"
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Store User Account Information",
+              "description": "The web server sends new user registration details and account information to the SQL database for storage.",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Store User Account Information"
+            ],
+            "id": "21b37b33-9d8a-4e95-973c-4fa6b2eb93a9",
+            "source": {
+              "x": 460,
+              "y": 140
+            },
+            "target": {
+              "cell": "8628a3df-4e04-448d-99a7-4be3813e2006",
+              "port": "630f25e2-76d0-4876-beab-dbdb24aa04bf"
+            },
+            "vertices": [
+              {
+                "x": 500,
+                "y": 140
+              },
+              {
+                "x": 580,
+                "y": 120
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Retrieve Account Information\n",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Retrieve Account Information\n"
+            ],
+            "id": "d8b49f4d-539f-4e43-987a-2b35218c6c4e",
+            "source": {
+              "x": 800,
+              "y": 150
+            },
+            "target": {
+              "cell": "f64212d8-83b8-42aa-ba81-fc387c865c21",
+              "port": "20e9fe6d-b924-459e-bd8c-7721d0a09e27"
             }
           }
         ],
