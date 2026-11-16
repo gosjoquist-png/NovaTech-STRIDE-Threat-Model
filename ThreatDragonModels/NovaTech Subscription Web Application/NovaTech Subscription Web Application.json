@@ -21,6 +21,73 @@
         "cells": [
           {
             "position": {
+              "x": 115,
+              "y": 90
+            },
+            "size": {
+              "width": 140,
+              "height": 210
+            },
+            "attrs": {
+              "label": {
+                "text": "Trust Boundary"
+              }
+            },
+            "visible": true,
+            "shape": "trust-boundary-box",
+            "id": "5f007691-7a01-4329-8309-a5d108372211",
+            "zIndex": -1,
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "Trust Boundary",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [
+                "b589ca23-dbce-4396-9200-ea2eac3d3eb6",
+                "fe68efb6-10fe-4b81-ad84-3bc445badbd3",
+                "5573b857-fe98-4341-a475-075184e4b12a"
+              ],
+              "containedElements": [
+                "de14a99b-ca06-4b0b-a69b-352139921033"
+              ]
+            }
+          },
+          {
+            "position": {
+              "x": 337.99999999999955,
+              "y": 270
+            },
+            "size": {
+              "width": 280,
+              "height": 230
+            },
+            "attrs": {
+              "label": {
+                "text": "Trust Boundary"
+              }
+            },
+            "visible": true,
+            "shape": "trust-boundary-box",
+            "id": "e263dbed-5fe2-4006-9afa-3a540306b97e",
+            "zIndex": -1,
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "Trust Boundary",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [
+                "2bd599e7-fe5c-4bfe-bf45-9bcace5646d9",
+                "aa5baaef-1495-49d3-9138-dc64b19e8e5a"
+              ],
+              "containedElements": [
+                "4efea959-76b0-4fda-a8eb-90617aaa8da4"
+              ]
+            }
+          },
+          {
+            "position": {
               "x": 140,
               "y": 140
             },
@@ -630,7 +697,9 @@
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [],
-              "trustBoundaryIds": []
+              "trustBoundaryIds": [
+                "e263dbed-5fe2-4006-9afa-3a540306b97e"
+              ]
             },
             "labels": [
               "Payment Request\n"
@@ -677,7 +746,9 @@
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [],
-              "trustBoundaryIds": []
+              "trustBoundaryIds": [
+                "e263dbed-5fe2-4006-9afa-3a540306b97e"
+              ]
             },
             "labels": [
               "Payment Status/Confirmation"
@@ -781,7 +852,9 @@
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [],
-              "trustBoundaryIds": []
+              "trustBoundaryIds": [
+                "5f007691-7a01-4329-8309-a5d108372211"
+              ]
             },
             "labels": [
               "Registration/ Payment Confirmation"
@@ -833,7 +906,9 @@
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [],
-              "trustBoundaryIds": []
+              "trustBoundaryIds": [
+                "5f007691-7a01-4329-8309-a5d108372211"
+              ]
             },
             "labels": [
               "Login Creds\n"
@@ -889,7 +964,9 @@
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [],
-              "trustBoundaryIds": []
+              "trustBoundaryIds": [
+                "5f007691-7a01-4329-8309-a5d108372211"
+              ]
             },
             "labels": [
               "Subscription Request"
