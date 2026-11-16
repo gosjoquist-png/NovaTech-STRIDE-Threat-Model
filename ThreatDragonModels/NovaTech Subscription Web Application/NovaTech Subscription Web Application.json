@@ -21,16 +21,16 @@
         "cells": [
           {
             "position": {
-              "x": 115,
+              "x": -14.999999999999943,
               "y": 90
             },
             "size": {
-              "width": 140,
+              "width": 270,
               "height": 210
             },
             "attrs": {
               "label": {
-                "text": "Trust Boundary"
+                "text": "External User Environment"
               }
             },
             "visible": true,
@@ -39,7 +39,7 @@
             "zIndex": -1,
             "data": {
               "type": "tm.BoundaryBox",
-              "name": "Trust Boundary",
+              "name": "External User Environment",
               "description": "",
               "isTrustBoundary": true,
               "hasOpenThreats": false,
@@ -55,8 +55,8 @@
           },
           {
             "position": {
-              "x": 337.99999999999955,
-              "y": 270
+              "x": 440,
+              "y": 260
             },
             "size": {
               "width": 280,
@@ -64,7 +64,7 @@
             },
             "attrs": {
               "label": {
-                "text": "Trust Boundary"
+                "text": "1. Third-Party Payment Environment"
               }
             },
             "visible": true,
@@ -73,7 +73,7 @@
             "zIndex": -1,
             "data": {
               "type": "tm.BoundaryBox",
-              "name": "Trust Boundary",
+              "name": "1. Third-Party Payment Environment",
               "description": "",
               "isTrustBoundary": true,
               "hasOpenThreats": false,
@@ -83,6 +83,44 @@
               ],
               "containedElements": [
                 "4efea959-76b0-4fda-a8eb-90617aaa8da4"
+              ]
+            }
+          },
+          {
+            "position": {
+              "x": 389.9999999999993,
+              "y": -89.99999999999898
+            },
+            "size": {
+              "width": 520,
+              "height": 270
+            },
+            "attrs": {
+              "label": {
+                "text": "NovaTech Internal Application Environment"
+              }
+            },
+            "visible": true,
+            "shape": "trust-boundary-box",
+            "id": "126209c5-3301-4aa6-bd66-cfa77d336359",
+            "zIndex": -1,
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "NovaTech Internal Application Environment",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [
+                "21b37b33-9d8a-4e95-973c-4fa6b2eb93a9",
+                "2bd599e7-fe5c-4bfe-bf45-9bcace5646d9",
+                "aa5baaef-1495-49d3-9138-dc64b19e8e5a",
+                "b589ca23-dbce-4396-9200-ea2eac3d3eb6",
+                "fe68efb6-10fe-4b81-ad84-3bc445badbd3",
+                "5573b857-fe98-4341-a475-075184e4b12a"
+              ],
+              "containedElements": [
+                "f64212d8-83b8-42aa-ba81-fc387c865c21",
+                "8628a3df-4e04-448d-99a7-4be3813e2006"
               ]
             }
           },
@@ -595,7 +633,9 @@
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [],
-              "trustBoundaryIds": []
+              "trustBoundaryIds": [
+                "126209c5-3301-4aa6-bd66-cfa77d336359"
+              ]
             },
             "labels": [
               "Store User Account Information"
@@ -698,7 +738,8 @@
               "protocol": "",
               "threats": [],
               "trustBoundaryIds": [
-                "e263dbed-5fe2-4006-9afa-3a540306b97e"
+                "e263dbed-5fe2-4006-9afa-3a540306b97e",
+                "126209c5-3301-4aa6-bd66-cfa77d336359"
               ]
             },
             "labels": [
@@ -747,7 +788,8 @@
               "protocol": "",
               "threats": [],
               "trustBoundaryIds": [
-                "e263dbed-5fe2-4006-9afa-3a540306b97e"
+                "e263dbed-5fe2-4006-9afa-3a540306b97e",
+                "126209c5-3301-4aa6-bd66-cfa77d336359"
               ]
             },
             "labels": [
@@ -853,7 +895,8 @@
               "protocol": "",
               "threats": [],
               "trustBoundaryIds": [
-                "5f007691-7a01-4329-8309-a5d108372211"
+                "5f007691-7a01-4329-8309-a5d108372211",
+                "126209c5-3301-4aa6-bd66-cfa77d336359"
               ]
             },
             "labels": [
@@ -907,7 +950,8 @@
               "protocol": "",
               "threats": [],
               "trustBoundaryIds": [
-                "5f007691-7a01-4329-8309-a5d108372211"
+                "5f007691-7a01-4329-8309-a5d108372211",
+                "126209c5-3301-4aa6-bd66-cfa77d336359"
               ]
             },
             "labels": [
@@ -965,7 +1009,8 @@
               "protocol": "",
               "threats": [],
               "trustBoundaryIds": [
-                "5f007691-7a01-4329-8309-a5d108372211"
+                "5f007691-7a01-4329-8309-a5d108372211",
+                "126209c5-3301-4aa6-bd66-cfa77d336359"
               ]
             },
             "labels": [
